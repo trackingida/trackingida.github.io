@@ -82,3 +82,14 @@ a:hover{
   width: 40%;
   padding: 1rem;
 }
+
+.artifact-preview{
+  display: table-cell;
+  width:33%;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.artifact-image{
+  width:100%;
+}
