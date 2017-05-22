@@ -1,0 +1,101 @@
+body{
+	font-family: 'Special Elite', cursive;
+}
+
+nav.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-default{
+	background: none;
+	border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+
+.navbar-w-image{
+	background: url(/images/top_bar.png) no-repeat center top;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 80;
+    height: 60px;
+}
+
+.navbar-brand{
+	height: 70px;
+}
+
+/*.navbar-w-image > .navbar-header > a{
+	line-height: 70px !important;
+}*/
+/*.navbar-nav > li > a{
+	line-height: 50px;
+}
+*/
+.logo-area {
+	background: url("/images/halfscreen_paper.png") no-repeat center top;
+	background-size: cover;
+	background-position: bottom;
+	height: 60vh;
+	margin-bottom: 0;
+	z-index: 90;
+	position: relative;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+
+}
+
+.logo{
+	height: 80%;
+  }
+
+.navbar-logo{
+	height: 90%;
+}
+
+.jumbotron {
+	background: url("/images/unlocking.jpg") no-repeat center top;
+	background-size: cover;
+	height: 100vh;
+	margin-bottom: 0;
+
+}
+
+.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.image-blurb{
+	text-align: center;
+	padding-top: 4rem;
+}
+
+.info-area{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.section-heading{
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.team-section{
+	width: 100%;
+	background-color: grey;
+	margin-top: 5rem;
+}
+
+.subscribe-section{
+	width: 100%;
+	background-color: #000000;
+    color: white;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	text-align: center;
+}
