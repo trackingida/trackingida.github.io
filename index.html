@@ -21,17 +21,17 @@
       <![endif]-->
  </head>
  <body>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-w-image">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-w-image" id="navbar">
        <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+             <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-           </button>
-           <a class="navbar-brand" href="#"><img src="/images/navbar_logo.png" class="navbar-logo"></a>
+           </button> -->
+           <a class="navbar-brand" id="smallLogo" href="#"><img src="/images/navbar_logo.png" class="navbar-logo"></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,14 +60,14 @@
     <nav class="navbar navbar-default navbar-fixed-top">
        <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
+          <!-- <div class="navbar-header">
              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
            </button>
-      </div>
+      </div> -->
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -93,7 +93,7 @@
 
 
 
-<div class="logo-area">
+<div class="logo-area" id="bigLogoArea">
      <img src="/images/halfscreen_logo.png" class="logo">
 
 </div>
@@ -237,5 +237,23 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script>
+	var bigLogoArea = document.getElementById("bigLogoArea");
+	var smallLogo = document.getElementById("smallLogo");
+	var navbar = document.getElementById("navbar");
+	var bigLogoClass = bigLogoArea.className;
+	var smallLogoClass = smallLogo.className;
+	document.onscroll = function(){
+		if ((bigLogoArea.offsetTop + bigLogoArea.offsetHeight - window.scrollY) <= (navbar.offsetTop + navbar.offsetHeight)){
+			bigLogoArea.className = bigLogoClass + " hidden-logo-area";
+			smallLogo.className = smallLogoClass + " visible-small-logo";
+		}
+		else{
+			bigLogoArea.className = bigLogoClass;
+			smallLogo.className = smallLogoClass;
+		}
+	}
+
+</script>
 </body>
 </html>

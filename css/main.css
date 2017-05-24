@@ -25,6 +25,12 @@ nav.navbar {
 
 .navbar-brand{
 	height: 70px;
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+.visible-small-logo{
+	opacity: 1;
 }
 
 /*.navbar-w-image > .navbar-header > a{
@@ -35,7 +41,8 @@ nav.navbar {
 }
 */
 .logo-area {
-	background: url("/images/halfscreen_paper.png") no-repeat center top;
+	background: burlywood;
+	background: url("/images/halfscreen_paper.jpg") no-repeat center top;
 	background-size: cover;
 	background-position: bottom;
 	height: 60vh;
@@ -45,11 +52,15 @@ nav.navbar {
 	display: flex;
   	justify-content: center;
   	align-items: center;
+}
 
+.hidden-logo-area{
+	background: none;
 }
 
 .logo{
-	height: 80%;
+	max-height: 80%;
+    max-width: 100%;
   }
 
 .navbar-logo{
