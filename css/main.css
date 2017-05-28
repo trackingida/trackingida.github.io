@@ -110,3 +110,69 @@ nav.navbar {
 	padding-bottom: 5rem;
 	text-align: center;
 }
+
+.narrow-page{
+	max-width: 40rem;
+}
+
+.footer {
+	background: burlywood;
+	background: url("/images/paper_footer.png") no-repeat center bottom;
+	background-size: cover;
+	background-position: top;
+	height: 30vh;
+	position: relative;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	margin-top: -15px;
+}
+
+.footer-content{
+	min-width: 60%;
+	max-width: 80rem;
+	/*padding-bottom: 1rem;*/
+}
+
+.footer-cell{
+	height: 100%;
+	align-items: center;
+}
+
+.icon-link{
+	/*width: auto;*/
+	width: auto;
+	max-height: 10vh;
+	max-width: 30vw;
+}
+
+.icon-link:hover{
+	opacity: .5;
+}
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+.btn-primary.outline {
+    border: 2px solid black;
+    color: black;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: burlywood;
+    border-color: black;
+    background-color: black;
+}
+
+a: hover, a:visited, a:link, a:active{
+	text-decoration: none !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
