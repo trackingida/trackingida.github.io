@@ -112,9 +112,15 @@ a {
 	text-align: center;
 }
 
-.narrow-page{
+.wide-page{
 	max-width: 130rem;
 	margin: auto;
+}
+
+.narrow-page{
+	max-width: 100rem;
+	margin: auto;
+	margin-top: 8rem;
 }
 
 .footer {

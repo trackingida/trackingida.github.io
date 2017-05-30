@@ -5,7 +5,7 @@
 
 body {
  padding:  1em;
-font-family: 'Droid Serif', serif;
+font-family: 'Special Elite', cursive;
  font-size: 1.2rem;
 }
 
@@ -13,13 +13,11 @@ h1 {
   font-size:  3rem;
   font-weight:  400;
   margin-bottom: 0;
-  font-family: 'Cinzel', serif;
 }
 
 h2{
 	margin-bottom: 0;
 /*	font-family: 'Averia Libre', cursive;*/
-  font-family: 'Cinzel', serif;
   text-align: center;
 }
 
@@ -30,6 +28,10 @@ a{
 
 a:hover{
   color: #F4D08B;
+}
+
+p {
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .gallery {
@@ -65,10 +67,11 @@ a:hover{
     position:relative;
 }
 
-.container {
+.playthrough-section {
   display: table;
   height: 100%;
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 .split-text-big {

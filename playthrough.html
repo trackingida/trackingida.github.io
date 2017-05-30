@@ -4,15 +4,33 @@
 	<meta name="robots" content="noindex">
 	<title>Tracking Ida</title>
 	<link rel="stylesheet" type="text/css" href="/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Cinzel|Droid+Serif" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
 </head>
 <body>
 
-<div class="fullPage">
+<nav class="navbar navbar-default navbar-fixed-top navbar-w-image" id="navbar">
+       <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" id="smallLogo" href="#"><img src="/images/navbar_logo.png" class="navbar-logo"></a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="#trailer">Trailer</a></li>
+               <li><a href="#subscribe">Subscribe</a></li>
+               <li><a href="#contact">Contact</a></li>         
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+<div class="narrow-page">
 
 	<!-- <img class="project-image" src="images/header.jpg" /> -->
 
-	<h1>Tracking Ida</h1>
 	<h2>Playthrough (Rough Cut)</h2>
 	<p>This is an accelerated playthrough. If you want to follow the narrative, pause the video when I zoom into artifacts and notes. Scroll down for additional materials and photos of the close-ups from the video.</p>
 	<div class="video-wrapper">
@@ -20,7 +38,7 @@
 	 </div>
 	
 	<h2>Tracking Ida Explanation Video</h2>
-	Here's a rough cut video explaining the game, it's historical inspiration and goals, and the impact it had on the students who played the pilot.
+	<p>Here's a rough cut video explaining the game, it's historical inspiration and goals, and the impact it had on the students who played the pilot.</p>
 	<div class="video-wrapper">
 	 	<iframe width="1920" height="1080" src="https://www.youtube.com/embed/ntUgHRsl7sQ?modestbranding=0&amp;showinfo=0&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
 	 </div>
@@ -29,7 +47,7 @@
 	 <p>Here are some additional materials that didn't make it into the video, plus the close-ups that were briefly shown.
 	 <h3>Part 1: Puzzle Solving</h3>
 	 <h4>Compartment 1</h4>
-	 <section class="container">
+	 <section class="playthrough-section">
 		 <div class="artifact-preview">
 			 <p>Intro note from Ida B. Wells</p>
 			 <a href="images/playthrough/intro.JPG"><img src="images/playthrough/intro.JPG" class="artifact-image"></a>
@@ -44,7 +62,7 @@
 		 </div>
 	 </section>
 
-	 <section class="container">
+	 <section class="playthrough-section">
 		 <div class="artifact-preview">
 			 <p>Extension Headlines Puzzle (board)</p>
 			 <a href="images/playthrough/extension_backboard.JPG"><img src="images/playthrough/extension_backboard.JPG" class="artifact-image"></a>
@@ -56,7 +74,7 @@
 	 </section>
 
 	 <h4>Compartment 2</h4>
-	 <section class="container">
+	 <section class="playthrough-section">
 		 <div class="artifact-preview">
 			 <p>Lynching Postcards</p>
 			 <a href="images/playthrough/postcards.JPG"><img src="images/playthrough/postcards.JPG" class="artifact-image"></a>
@@ -72,7 +90,7 @@
 	 </section>
 
 	 <h4>Compartment 3</h4>
-	 <section class="container">
+	 <section class="playthrough-section">
 		 <div class="artifact-preview">
 			 <p>Ida's Investigative Tactics</p>
 			 <a href="images/playthrough/tactics.JPG"><img src="images/playthrough/tactics.JPG" class="artifact-image"></a>
@@ -81,7 +99,7 @@
 
 	 <h3>Part 2: Newsteam Roleplay</h3>
 	 <p>After part 1, players talk with Jordan through email and chat to prepare for their next mission. Below are some samples of that communication.</p>
-	 <section class="container">
+	 <section class="playthrough-section">
 		 <div class="artifact-preview">
 			 <p>Email from Jordan Moss</p>
 			 <a href="images/playthrough/jordan_email.jpg"><img src="images/playthrough/jordan_email.jpg" class="artifact-image"></a>
@@ -96,7 +114,7 @@
 		 </div>
 	 </section>
 
-	 <section class="container">
+	 <section class="playthrough-section">
 		 <div class="artifact-preview">
 			 <p>PR/Social Media Role</p>
 			 <a href="images/playthrough/pr.jpg"><img src="images/playthrough/pr.jpg" class="artifact-image"></a>
@@ -112,7 +130,7 @@
 	 </section>
 
 	 <h3>Part 3: Finale</h3>
-	 <section class="container">
+	 <section class="playthrough-section">
 		 <div class="artifact-preview">
 			 <p>Thomas Moss' Handkerchief</p>
 			 <a href="images/playthrough/handkerchief.JPG"><img src="images/playthrough/handkerchief.JPG" class="artifact-image"></a>
@@ -122,24 +140,38 @@
 			 <a href="images/playthrough/moss_family.JPG"><img src="images/playthrough/moss_family.JPG" class="artifact-image"></a>
 		 </div>
 	 </section>
+</div>
 
-
-	<!-- <div class="split-text">
-		<h2>About this game:</h2>
-		<p>The Locker is a mixed-reality installation game in which you explore physical artifacts with your hands and reveal memories using a bewitched magnifying glass. 
-		<p>You receive a note from Jade, a student at your high school who has recently gone missing, and decide to do some snooping. Inside her locker, you find diary entries to read, physical puzzles to solve, artifacts to investigate, and memories to reveal with your magnifying glass. 
-		<p>Combining physical exploration with puzzle and film, the Locker will engage quite a few of your senses for a memorable experience.
-	</div>
-	<div class="split-text">
-		<h2>Exhibitions</h2>
-		<p>IndieCade Official Selection, 2016
-		<p>LA Weekly's Artopia @ OUE Skyspace, 2016
-		<p>Winteractive Festival at USC, 2016
-		<p>OverGround Show at USC, 2016
- 	</div> -->
-		
-
-
+<div class="footer" id="contact"> 
+  <div class="footer-content">
+    <div class="row">
+        <div class="col-xs-4 footer-cell">
+          <a href="mailto:trackingida@gmail.com" class="image-link" target="_blank">
+            <img src="/images/stamp.png" class="footer-icon center-block">
+            <p class="caption-link">Email</p>
+          </a>
+        </div>
+        <div class="col-xs-4 footer-cell">
+          <a href="http://www.facebook.com/trackingida" class="image-link" target="_blank">
+            <img src="/images/facebook.png"  class="footer-icon center-block">
+            <p>Facebook</p>
+          </a>
+        </div>
+        <div class="col-xs-4 footer-cell">
+          <a href="http://twitter.com/trackingida" class="image-link" target="_blank">
+            <img src="/images/twitter.png"  class="footer-icon center-block">
+            <p>Twitter</p>
+          </a>
+        </div>
+        <!-- <div class="col-xs-3 footer-cell">
+          <a href="http://http://trackingida.com/presskit" class="image-link" target="_blank">
+            <img src="/images/newspaper2.png"  class="footer-icon center-block">
+            <p>Press Kit</p>
+          </a>
+        </div> -->
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>
