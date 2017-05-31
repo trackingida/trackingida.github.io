@@ -1,0 +1,120 @@
+extends _layouts/main.jade
+
+
+mixin metamap(key,values)
+  dt=key
+  each value in Array.isArray(values)? values : [values]
+    dd=value
+
+mixin requestReviewCopy()
+  if request_review_copy
+    section
+      h2 Request Review Copy
+      p Contact #{contact} to request an advance/review copy of #{title}.
+
+mixin youtubeVideo(embed)
+  .video-wrapper
+    iframe(width="480",
+           height="270",
+           src="https://www.youtube.com/embed/"+embed+"?modestbranding=0&showinfo=0&rel=0",
+           frameborder="0",
+           allowfullscreen)
+
+
+
+block title
+  title #{title} | Presskit
+
+block stylesheets
+  link(href='css/presskit.css', rel='stylesheet', type='text/css')
+
+block content
+  .presskit
+    header
+      h1 #{title+" "}
+        span.subtitle Press Kit
+      p=tagline
+
+    section
+      h2 Fact Sheet
+      .factsheet
+        dl
+          +metamap("Title", title)
+          +metamap("Developer", developer)
+          +metamap("Location", location)
+        dl
+          +metamap("Platforms", platforms)
+          +metamap("Release Date", valuesOrComingSoon(release_date) )
+          +metamap("Price", valuesOrComingSoon(prices) )
+        dl
+          //-
+          dt Web
+          dd
+            a(href=website) #{website}
+          //-
+          dt Twitter
+          dd
+            a(href="http://twitter.com/"+twitter) @#{twitter}
+          //-
+          dt Contact
+          dd
+            a(href=`mailto:${contact}`) #{contact}
+
+    section
+      +description()
+    section
+      +features()
+    section
+      +aboutTeam()
+
+    +requestReviewCopy()
+
+    section
+      h2 Credits
+      each credit in credits
+        dt
+          a(href=credit.website)=credit.name
+        dd=credit.role
+
+    section
+      h2 Videos
+      each video in videos
+        if video.youtube
+          +youtubeVideo(video.youtube)
+
+    section
+      h2=images_name
+      .gallery
+        each image in images
+          a(href=images_root+image)
+            img(src=images_thumbs_root+image alt=image)
+      a.download-zip(href=images_zip) Download All #{images_name} .zip (#{images_zip_size})
+
+    section
+      h2=branding_name
+      .gallery
+        each image in branding
+          a(href=branding_root+image)
+            img(src=branding_thumbs_root+image alt=image)
+      a.download-zip(href=branding_zip) Download All #{branding_name} .zip (#{branding_zip_size})
+
+    section
+      h2 Appearances
+      ul
+        each appearance in appearances
+          li
+            a(href=appearance.website)=appearance.event
+
+    section
+      h2 Mentions
+      ul
+        each mention in mentions
+          blockquote(cite=mention.website)
+            a(href=mention.website)
+              p &ldquo;!{mention.quote}&rdquo;
+              footer!=mention.source
+
+    footer
+      a(href=`mailto:${contact}`) Contact: #{contact}
+
+

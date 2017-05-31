@@ -1,0 +1,186 @@
+- var google_analytics_id = 'UA-63645432-1'
+
+- var title = "Tracking Ida"
+// - var tagline = "alternate reality history game"
+- var platforms = [ "Windows", "OSX" ]
+- var release_date = undefined
+- var developer = "Giverspace"
+- var location = "Los Angeles, CA"
+- var website = "http://www.tetheron.com"
+- var twitter = "Tetheron"
+- var contact = "press@tetheron.com"
+- var prices = []
+
+- var request_review_copy = false
+
+- var images_root = "/images/presskit/images/"
+- var images_thumbs_root = "/images/presskit/image_thumbs/"
+- var branding_root = "/images/presskit/branding/"
+- var branding_thumbs_root = "/images/presskit/branding_thumbs/"
+- var images_zip = "/images/presskit/images.zip"
+- var images_zip_size = "TO DO"
+- var branding_zip = "/images/presskit/branding.zip"
+- var branding_zip_size = "TO DO"
+
+
+- var images_name = "Gifs and Pictures"
+- var branding_name = "Icons and Logos"
+
+-
+  var images = [ "GameRound.gif"
+               , "TetherMayhem.gif"
+               , "TetheronExcitement.jpg"
+               , "TetheronFun.jpg"
+               , "TetheronProjected.jpg"
+               , "TetheronVictory.jpg"
+               ]
+
+-
+  var branding = [ "TetheronIcon.png"
+                 , "TetheronLogo_White_On_Black.png"
+                 , "TetheronLogo_DarkBG.png"
+                 , "TetheronLogo_BrightBG.png"
+                 , "GiverspaceLogo_BrightBG.png"
+                 , "GiverspaceLogo_DarkBG.png"
+                 ]
+
+-
+  var videos = [ { name: "Indiecade", youtube: "eAZquAupH_0" }
+               ]
+
+-
+  var credits = [
+    { name: "Julian Ceipek"
+    , role: "Design & Development"
+    , website: "http://jceipek.com/" }
+  , { name: "Patrick Quah"
+    , role: "Design & Community Management"
+    , website: "https://patrickquah.carbonmade.com/" }
+  , { name: "Julie Buchanan"
+    , role: "Music & Sound Design"
+    , website: "http://www.juliebuchananmusic.com/" }
+  , { name: "Brian Pickens"
+    , role: "Producer"
+    , website: "https://twitter.com/brianpickens2" }
+  ]
+
+-
+  var appearances = [
+    { event: "IndieCade ShowCase @ E3"
+    , website: "http://www.indiecade.com/games/selected/tetheron/"
+    }
+  ]
+
+
+-
+  var mentions = [
+    { quote: "&hellip;a simple, amazing grappling-battle mechanic"
+    , source: "Sam Machkovech &amp; Kyle Orland, Ars Technica"
+    , website: "http://arstechnica.com/gaming/2015/06/dog-butts-pooping-and-a-consent-simulator-indie-games-get-weird-at-e3/" }
+  , { quote: "&hellip;[one] of the more notable indie games [at E3]"
+    , source: "Ozzie Mejia, shacknews.com"
+    , website: "http://www.shacknews.com/article/90181/e3-2015-the-best-of-the-indies" }
+  ]
+
+-
+  function valuesOrComingSoon(values) {
+    values = Array.isArray(values)? values : (values? [values] : [])
+    return values.length > 0? values : "Coming Soon";
+  }
+
+mixin description()
+  :marked
+    ## Description
+    Tetheron puts 2-6 players in control of hurtling neon wrecking balls
+    grappling and swinging to survive this centripetal battle-royale.
+
+    One button controls make sure that everyone can get their tether on,
+    even if they’ve never touched a controller in their lives.
+
+mixin features()
+  :marked
+    ## Features
+    - 2-6 player local multiplayer
+    - 2-finger any-button gameplay
+    - dynamic music and sound effects
+    - procedurally generated levels
+
+mixin aboutTeam()
+  :marked
+    ## About the Team
+    Giverspace is a Los Angeles-based startup with a vision to create interactive experiences that bring people together.
+
+    The founders--Julian Ceipek and Patrick Quah--first combined forces to make experimental games in Richard Lemarchand’s Avant Garde video games class at USC’s Interactive Media and Games Division. Patrick was keen on simple, compelling arcade-style mechanics, Julian was interested in minimalism and 'juiciness', and both wanted to make a balanced, competitive game. The result: Tetheron.
+
+    The two applied a “playcentric” approach to game design, using rapid playtesting and intensive iteration to improve and polish the game at every turn.
+
+    Since then, the team has expanded to include Julie Buchanan, a Berklee College of Music graduate who has imbued the game with the rocking retro-techno-arcade vibe that keeps players tapping their feet long after their balls have dropped.
+
+    And of course, none of this would be possible without our wonderful producer Brian Pickens keeping everything on track and keeping Tetheron swinging along as smoothly as possible.
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+
+    // Always force latest IE rendering engine or request Chrome Frame
+    meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    //- Favicons
+    link(rel='apple-touch-icon', sizes='57x57', href='/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='/apple-touch-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='/apple-touch-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/apple-touch-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='/apple-touch-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/apple-touch-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='/apple-touch-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='/apple-touch-icon-180x180.png')
+    link(rel='icon', type='image/png', href='/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='/favicon-194x194.png', sizes='194x194')
+    link(rel='icon', type='image/png', href='/favicon-96x96.png', sizes='96x96')
+    link(rel='icon', type='image/png', href='/android-chrome-192x192.png', sizes='192x192')
+    link(rel='icon', type='image/png', href='/favicon-16x16.png', sizes='16x16')
+    link(rel='manifest', href='/manifest.json')
+    meta(name='msapplication-TileColor', content='#da532c')
+    meta(name='msapplication-TileImage', content='/mstile-144x144.png')
+    meta(name='theme-color', content='#000000')
+    //- End Favicons
+
+    block title
+      title #{title}
+
+    block description
+      meta(name='description', content='Tetheron puts 2-6 players in control of hurtling neon wrecking balls grappling and swinging to survive a centripetal battle-royale. One-button controls make it easy to learn but hard to master.')
+
+    block social
+      meta(name='twitter:card', content='summary_large_image')
+      meta(name='twitter:site', content='@tetheron')
+      meta(name='twitter:title', content='Tetheron')
+      meta(name='twitter:description', content="Tetheron puts 2-6 players in control of hurtling neon wrecking balls grappling and swinging to survive a centripetal battle-royale. One-button controls make it easy to learn but hard to master.")
+      meta(name='twitter:image', content='http://tetheron.com/images/TetheronTwitterCard.png')
+
+      meta(name='og:site_name', content='Tetheron')
+      meta(name='og:url', content='http://tetheron.com/')
+      meta(name='og:image', content='http://tetheron.com/images/TetheronOpenGraph.png')
+      meta(name='og:title', content='Tetheron')
+
+    block fonts
+
+    block stylesheets
+      link(href='css/presskit.css', rel='stylesheet', type='text/css')
+
+  body
+    block content
+
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '#{google_analytics_id}', 'auto');
+      ga('send', 'pageview');

@@ -1,0 +1,27 @@
+{
+  "name": "tetheron-website",
+  "version": "0.0.1",
+  "description": "Tetheron Static Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jceipek",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "compass": "^0.1.1",
+    "fly": "^1.2.4",
+    "fly-sass": "^0.3.0",
+    "jstransformer-marked": "^1.0.1",
+    "node-sass": "^3.7.0",
+    "normalize-scss": "^4.2.1",
+    "postcss-scss": "^0.1.7",
+    "pug": "^2.0.0-alpha6",
+    "sitemap": "^1.6.0",
+    "toml": "^2.3.0"
+  },
+  "devDependencies": {
+    "fly": "^1.4.1"
+  }
+}

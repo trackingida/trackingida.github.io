@@ -1,0 +1,14 @@
+cname = 'tetheron.com'
+hostname = 'http://tetheron.com'
+
+cacheTime = 600000 # 600 sec cache period
+
+[[urls]]
+	url = '/'
+	changefreq = 'hourly'
+	priority = 1.0
+
+[[urls]]
+	url = '/press'
+	changefreq = 'hourly'
+	priority = 0.5

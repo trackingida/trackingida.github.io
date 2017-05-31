@@ -1,0 +1,185 @@
+@import "normalize";
+//@include normalize();
+@import "susy";
+
+@charset "utf-8";
+
+%clearfix { 
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// $susy: layout(8 (4em 2em) inside show);
+$susy: layout(8 (4.5em 1em) inside);
+
+@function aspectRatioPercent($width, $height) {
+  @return percentage($height/$width);
+}
+
+
+$link_color: #337ab7;
+
+
+body {
+  font-size: 1.2rem;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+header {
+  padding-top: gutter();
+}
+
+header, section {
+  margin-bottom: gutter();
+}
+
+// .presskit:after {
+//   // Clearfix
+
+// }
+
+.presskit {
+  @include container(nest);
+  // @include span(12);
+  // padding: 1rem;
+  // float: left;
+  // @include span(4 at 4 of 12);
+  // width: span(8);
+  // margin-left: span(2) + gutter();
+  // margin-right: gutter();
+  // @include span(8);
+  // margin-left: span(1);
+  // background-color: #a00;
+  // @extend %clearfix;
+}
+
+.gallery {
+  @extend %clearfix;
+}
+
+.gallery a {
+  @include gallery(3 of 6, of-type);
+  margin: gutter();
+}
+
+.gallery img {
+  width: 100%;
+}
+
+header, section, .presskit+footer {
+  @include span(full)
+}
+
+p, ul {
+  margin: 0.7rem 0;
+}
+
+p {
+  padding-left: 1rem;
+}
+
+.factsheet {
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  // width: span(8);
+  // @include span(8 at 1);
+  // width: 100%;
+  display: inline-block;
+  padding: 0 1rem;
+  // width: span(8);
+
+}
+
+
+// ------------------------------------------
+//       -----------VIDEOS------------
+// ------------------------------------------
+.video-wrapper {
+  position: relative;
+  padding-bottom: aspectRatioPercent(16,9);
+  height: 0;
+  // margin: auto;
+  margin: gutter();
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.download-zip {
+  display: block;
+  // border: 1px solid black;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: $link_color;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+blockquote {
+  padding-left: 1rem;
+  border-left: 5px solid black;
+}
+
+blockquote footer {
+  margin-left: 2rem;
+  color: #777;
+  font-style: italic;
+}
+
+blockquote footer::before {
+  content: "\2015" // quotation dash (horbar)
+}
+
+
+$d-width: 9rem;
+
+dt {
+  float: left;
+  text-align: right;
+  font-weight: bold;
+  width: $d-width;
+}
+
+dd {
+  display: block;
+  margin-left: $d-width;
+  // text-align: left;
+  padding-left: 0.5rem;
+}
+
+
+.subtitle {
+  color: #aaa;
+}
+
+footer a {
+  background-color: #eee;
+  color: #333;
+  padding: 1rem;
+  clear: both;
+  display: block;
+  text-align: center;
+  // width: 100%;
+}
