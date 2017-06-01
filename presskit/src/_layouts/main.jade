@@ -2,13 +2,13 @@
 
 - var title = "Tracking Ida"
 // - var tagline = "alternate reality history game"
-- var platforms = [ "Windows", "OSX" ]
+- var platforms = [ "Physical Installation", "Web" ]
 - var release_date = undefined
-- var developer = "Giverspace"
+- var developer = "Lishan AZ"
 - var location = "Los Angeles, CA"
-- var website = "http://www.tetheron.com"
-- var twitter = "Tetheron"
-- var contact = "press@tetheron.com"
+- var website = "http://trackingida.com/"
+- var twitter = "trackingida"
+- var contact = "trackingida@gmail.com"
 - var prices = []
 
 - var request_review_copy = false
@@ -18,34 +18,31 @@
 - var branding_root = "/images/presskit/branding/"
 - var branding_thumbs_root = "/images/presskit/branding_thumbs/"
 - var images_zip = "/images/presskit/images.zip"
-- var images_zip_size = "TO DO"
+- var images_zip_size = "4 MB"
 - var branding_zip = "/images/presskit/branding.zip"
-- var branding_zip_size = "TO DO"
+- var branding_zip_size = "4 MB"
 
 
-- var images_name = "Gifs and Pictures"
+- var images_name = "Pictures"
 - var branding_name = "Icons and Logos"
 
 -
-  var images = [ "GameRound.gif"
-               , "TetherMayhem.gif"
-               , "TetheronExcitement.jpg"
-               , "TetheronFun.jpg"
-               , "TetheronProjected.jpg"
-               , "TetheronVictory.jpg"
+  var images = [ "TrackingIdaUnlocking.jpg"
+               , "TrackingIdaDiscussing.jpg"
+               , "TrackingIdaPuzzle.jpg"
+               , "TrackingIdaCollaboration.jpg"
+               , "TrackingIdaPuzzleHands.jpg"
                ]
 
 -
-  var branding = [ "TetheronIcon.png"
-                 , "TetheronLogo_White_On_Black.png"
-                 , "TetheronLogo_DarkBG.png"
-                 , "TetheronLogo_BrightBG.png"
-                 , "GiverspaceLogo_BrightBG.png"
-                 , "GiverspaceLogo_DarkBG.png"
+  var branding = [ "TrackingIdaBanner.jpg"
+                 , "TrackingIdaPoster.jpg"
+                 , "TrackingIdaLogo.png"
+                 , "TrackingIdaSquare.jpg"
                  ]
 
 -
-  var videos = [ { name: "Indiecade", youtube: "eAZquAupH_0" }
+  var videos = [ { name: "Trailer", vimeo: "218403978" }
                ]
 
 -
@@ -67,20 +64,20 @@
 -
   var appearances = [
     { event: "IndieCade ShowCase @ E3"
-    , website: "http://www.indiecade.com/games/selected/tetheron/"
+    , website: "http://www.indiecade.com/games/selected/tracking-ida"
     }
   ]
 
 
--
-  var mentions = [
-    { quote: "&hellip;a simple, amazing grappling-battle mechanic"
-    , source: "Sam Machkovech &amp; Kyle Orland, Ars Technica"
-    , website: "http://arstechnica.com/gaming/2015/06/dog-butts-pooping-and-a-consent-simulator-indie-games-get-weird-at-e3/" }
-  , { quote: "&hellip;[one] of the more notable indie games [at E3]"
-    , source: "Ozzie Mejia, shacknews.com"
-    , website: "http://www.shacknews.com/article/90181/e3-2015-the-best-of-the-indies" }
-  ]
+// -
+//   var mentions = [
+//     { quote: "&hellip;a simple, amazing grappling-battle mechanic"
+//     , source: "Sam Machkovech &amp; Kyle Orland, Ars Technica"
+//     , website: "http://arstechnica.com/gaming/2015/06/dog-butts-pooping-and-a-consent-simulator-indie-games-get-weird-at-e3/" }
+//   , { quote: "&hellip;[one] of the more notable indie games [at E3]"
+//     , source: "Ozzie Mejia, shacknews.com"
+//     , website: "http://www.shacknews.com/article/90181/e3-2015-the-best-of-the-indies" }
+//   ]
 
 -
   function valuesOrComingSoon(values) {
@@ -91,32 +88,28 @@
 mixin description()
   :marked
     ## Description
-    Tetheron puts 2-6 players in control of hurtling neon wrecking balls
-    grappling and swinging to survive this centripetal battle-royale.
+    Tracking Ida is an educational alternate reality game (ARG) inspired by the pioneering investigative journalism of Ida B. Wells in the 1890s. Players uncover Ida B. Wells’ crusade against lynching and use her strategies to investigate police and vigilante killings today. Along the way, they solve puzzles, decode messages through a phonograph, role-play as investigative journalists, interview members of their community, and harness social media to spread awareness.
 
-    One button controls make sure that everyone can get their tether on,
-    even if they’ve never touched a controller in their lives.
+    Players explore a trunk sent by Ida B. Wells. The trunk contains the salvaged evidence of Wells’ investigation into Memphis lynchings--what she managed to preserve after her newspaper office was burned down by a lynch mob in 1892. To keep these documents out of her persecutors’ hands, Wells secured them in locked compartments. Players solve puzzles to unlock each compartment in the trunk as they search for the map to her investigative tactics. 
 
-mixin features()
+//- mixin features()
+//-   :marked
+//-     ## Features
+//-     - 2-6 player local multiplayer
+//-     - 2-finger any-button gameplay
+//-     - dynamic music and sound effects
+//-     - procedurally generated levels
+
+mixin artistStatement()
   :marked
-    ## Features
-    - 2-6 player local multiplayer
-    - 2-finger any-button gameplay
-    - dynamic music and sound effects
-    - procedurally generated levels
+    ## Artist Statement
+    There are no surviving copies of the Memphis Free Speech, Ida B. Wells’ first newspaper. When a lynch mob came to silence her in 1892 and found no body to burn, they burned down her newspaper office instead. Though they failed to kill her, the mob succeeded in erasing the important work she was doing in Memphis. Tracking Ida is in part about reclaiming history destroyed. Whenever possible, we used newspaper articles from the time period--articles that were important to Wells’ investigations. What we couldn’t find, we reconstructed using a combination of primary documents and secondary sources.
 
-mixin aboutTeam()
-  :marked
-    ## About the Team
-    Giverspace is a Los Angeles-based startup with a vision to create interactive experiences that bring people together.
+    The subject of history is typically associated with boring textbooks and sleep-inducing lectures. With Tracking Ida, we aim not only to spark interest in stories of Black resistance, but to create personal connection to these stories by making history come alive. We made the game hands-on: players get to touch historical artifacts, type on a typewriter, listen to Ida B. Wells’ voice through a phonograph, and interact with a personal narrative. We immerse players in a story that connects the past to the present and is relevant to everyday life in their neighborhood.
 
-    The founders--Julian Ceipek and Patrick Quah--first combined forces to make experimental games in Richard Lemarchand’s Avant Garde video games class at USC’s Interactive Media and Games Division. Patrick was keen on simple, compelling arcade-style mechanics, Julian was interested in minimalism and 'juiciness', and both wanted to make a balanced, competitive game. The result: Tetheron.
+    We aim to give players a taste of activism in a structured environment with the hope that they might one day get involved in their communities outside of the game. Players apply Ida B. Wells’ strategies to today by interviewing community members about a recent police killing. We prompt players to interact with local activists, giving them a tangible avenue into community engagement in the future.
 
-    The two applied a “playcentric” approach to game design, using rapid playtesting and intensive iteration to improve and polish the game at every turn.
-
-    Since then, the team has expanded to include Julie Buchanan, a Berklee College of Music graduate who has imbued the game with the rocking retro-techno-arcade vibe that keeps players tapping their feet long after their balls have dropped.
-
-    And of course, none of this would be possible without our wonderful producer Brian Pickens keeping everything on track and keeping Tetheron swinging along as smoothly as possible.
+    With Tracking Ida, we aim to spark interest in Black resistance in the past, present, and future.
 
 doctype html
 html

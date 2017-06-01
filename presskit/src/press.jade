@@ -20,6 +20,14 @@ mixin youtubeVideo(embed)
            frameborder="0",
            allowfullscreen)
 
+mixin vimeoVideo(embed)
+  .video-wrapper
+    iframe(width="480",
+           height="270",
+           src="https://player.vimeo.com/video/"+embed+"?title=0&byline=0&portrait=0",
+           frameborder="0",
+           allowfullscreen)
+
 
 
 block title
@@ -62,10 +70,10 @@ block content
 
     section
       +description()
+    //- section
+    //-   +features()
     section
-      +features()
-    section
-      +aboutTeam()
+      +artistStatement()
 
     +requestReviewCopy()
 
@@ -81,6 +89,8 @@ block content
       each video in videos
         if video.youtube
           +youtubeVideo(video.youtube)
+        if video.vimeo
+          +vimeoVideo(video.vimeo)
 
     section
       h2=images_name
@@ -105,14 +115,14 @@ block content
           li
             a(href=appearance.website)=appearance.event
 
-    section
-      h2 Mentions
-      ul
-        each mention in mentions
-          blockquote(cite=mention.website)
-            a(href=mention.website)
-              p &ldquo;!{mention.quote}&rdquo;
-              footer!=mention.source
+    //- section
+    //-   h2 Mentions
+    //-   ul
+    //-     each mention in mentions
+    //-       blockquote(cite=mention.website)
+    //-         a(href=mention.website)
+    //-           p &ldquo;!{mention.quote}&rdquo;
+    //-           footer!=mention.source
 
     footer
       a(href=`mailto:${contact}`) Contact: #{contact}
