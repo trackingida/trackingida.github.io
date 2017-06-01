@@ -470,11 +470,11 @@ dt {
   float: left;
   text-align: right;
   font-weight: bold;
-  width: 9rem; }
+  width: 15rem; }
 
 dd {
   display: block;
-  margin-left: 9rem;
+  margin-left: 15rem;
   padding-left: 0.5rem; }
 
 .subtitle {
