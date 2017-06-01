@@ -7,12 +7,20 @@ nav.navbar {
     margin-bottom: 0;
 }
 
+/*.footer a:hover, .footer a:visited, .footer a:link, .footer a:active{
+	text-decoration: none;
+}*/
+
 a:hover, a:visited, a:link, a:active{
 	text-decoration: none;
 }
 
 a {
 	text-decoration: none;
+}
+
+a:hover h4, a:visited h4, a:active h4{
+	text-decoration: underline;
 }
 
 .navbar-default{
